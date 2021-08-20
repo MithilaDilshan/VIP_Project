@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css"/>
+	<link rel="stylesheet" href="styles/layout.css"/>
+	<link rel="stylesheet" href="styles/formStyles.css"/>
+	<link rel="icon" href="ico.ico" type="image/x-icon">
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+
+<body>
+<!--Header Section-->
+	<header>
+	<!--navigation bar-->
+	<a href="#" title = "VIP Grocery Delivery System"><img src="images/logo.png" alt="VIP Grocery Delivery System"></img></a>
+	<img src="images/word.png" style="float:right;width:40%;margin-right:10px;margin-top:5px"></img>
+		<ul class="ul_menu">
+			<li class="li_menu"><a  class="A" href="home.html">Home</li></a>
+			<li class="active"><a class="A" href="#">Registration</li></a>
+			<li class="li_menu"><a class="A" href="login.html">Login</li></a>
+			<li class="li_menu"><a class="A" href="contact.html">Contact Us</li></a>
+			<li class="li_menu"><a class="A" href="userAcc.html">User Accounts</li></a>
+			<a href="#" title ="search"><img src="images/search.png" style="float:right;width:40px"></img></a>
+			<input type="search" placeholder="Search" class="in"></input>
+		</ul>
+	</header>
+		<!--Main Content-->
+		<section>
+			<nav class="nav1">
+				<h4>Popular Orders</h4>
+
+				<ul class="ul_menu1">
+					<li><a class="active1" href="plates.html">Plate Sets</li></a><br>
+					<li><a class="active1" href="beverage.html">Beverages</li></a><br>
+					<li><a class="active1" href="laundry.html">Laundry Items</li></a><br>
+					<li><a class="active1" href="knife.html">Knife Sets</li></a><br>
+					<li><a class="active1" href="skin.html">Skin Care</li></a><br>
+					<h5>Pin It</h5>
+					<a href="https://www.pinterest.com" title = "pinterest" ><img src="images/pin.png" style ="width:50px"></img></a>
+					<h6>Online Shopping In Sri Lanka with Free Home Delivery</h6>
+					<p style="font-size:11px;color:blue">"What was the last time you had an exciting and rewarding online shopping experience? Can’t remember!"
+					</p>
+		
+				</ul><br/>
+			</nav>
+			<article class="article1">
+				<h1 style="text-align:center">Create your VIP Account</h1>
+				Already Member ? <a href="login.html">Login</a> Here
+				<form  method="POST" target="_self" action="login.html" onsubmit="return checkPassword()">
+					<label for="fname">First Name<font color="red">*</font></label><br/>
+					<input type="text" id="fname" name="fname" class="hi" placeholder="Enter your first name" required></input><br/>
+					<label for="lname">Last Name<font color="red">*</font></label><br/>
+					<input type="text" id="lname" name="lname" class="hi" placeholder="Enter your last name" required></input><br/>
+	
+					<label for="gender">Gender</label><br/>
+					<input type="radio" id="gender" name="gender" checked>Male</input>
+					<input type="radio" id="gender" name="gender">Female</input><br/><br>
+	
+					<label for="mobile">Mobile Number<font color="red">*</font></label><br/>
+					<input type="text" id="mobile" name="mobile" class="hi" pattern="[0-9]{10}" placeholder="Enter your mobile number" required></input><br/>
+					<label for="email">E-mail<font color="red">*</font></label><br/>
+					<input type="email" id="email" name="email" class="hi" pattern="[0-9a-zA-Z%&$@.]+@[a-zA-Z]+\.+[a-zA-Z]{2,3}" placeholder="Enter your E-mail" required></input><br/>
+					<img src="images/register.jpg" style="float:right;width:30%">
+					<label for="address">Address<font color="red">*</font></label><br/>
+					<textarea type="text" id="address" name="address" rows="4" col="10" placeholder="Enter your Address" style="border:solid black" required></textarea><br/><br/
+					<label for="dob">Choose your DOB</label><br/>
+				<select>
+					<option name="Choose a date" selected>Choose a date</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+		
+				</select>
+	
+				<select>
+					<option name="Choose a month" selected>Choose a month</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+
+				</select>
+	
+				<select>
+					<option name="Choose a year" selected>Choose a year</option>
+					<option>1995</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+					<option>2001</option>
+					<option>2002</option>
+					<option>2003</option>
+					<option>2004</option>
+					<option>2005</option>
+
+				</select>
+	
+				<br/></br><label for="password">Password<font color="red">*</font></label><br/>
+				<input type="password" id="pwd" name="pwd" class="hi" pattern="[a-zA-Z0-9]{5,10}" placeholder="Enter Password" required></input></br/>
+	
+				<label for="passwordR">Re-enter Password<font color="red">*</font></label><br/>
+				<input type="password" id="rpwd" name="rpwd" class="hi" pattern="[a-zA-Z0-9]{5,10}" placeholder="Re-Enter Password" required></input></br/><br/><br/><br/><br/>
+				
+				<fieldset style="border:solid black">
+					
+					<p style="float:left">I'm not a robot<font color="red">*</font><p>
+					<input type="checkbox" id="check0" onclick="enableButton()"></input>
+					<img src="images/captcha.png" style="float:right;width:50px"></img>
+				</fieldset><br>
+	
+				<label>Accept privacy policy and terms<font color="red">*</font></label>
+				<input type="checkbox" id="check" name="check" onclick="enableButton()"><br/> 
+				<label style="float:right">(<font color="red">*</font>) means that must be mandatory</label>
+				<br>
+				<br>
+				<input type="submit" id="btn" value="Sign Up" class="submit"  disabled style="margin-left:200px"></input><br><br>
+				By clicking <font color="red">"Sign Up"</font>, I agree to VIP's <a href="termsConditions.html">Terms of use</a> and <a href="termsConditions.html"> Privacy Policy
+	
+			</form>
+		</article>
+		
+		<aside class="aside1">
+				<a href="#" title ="Company Logo"><img src="images/cart.jpeg" style="width:100%;"></img></a><br><br><br>
+				<h4 style="color:gray;text-align:center">Scan Me</h4><br>
+				<a href="" title = "Scan Me" ><img src="images/qr.png" style ="width:100px;margin-left:50px"></img></a><br><br>
+				<input type="date" style =""></input><br>
+				<script>
+					var d = new Date();
+					var date = d.getDate();
+					var month=d.getMonth() + 1;
+					var year=d.getFullYear();
+					var str = month + " / " + date + " / " + year;
+		
+					document.write(str + "<br>" + "<br>");
+					
+					var sec = d.getSeconds();
+					var min = d.getMinutes();
+					var hr = d.getHours();
+					var time = hr + ":" + min + ":" + sec ;
+					document.write(time);
+				</script>
+		</aside>
+		
+	</section>
+	
+	<footer>
+	
+		<section>
+		
+			<nav class="nav2">
+				<h4>We are accepted</h4>
+				<a href="" title="Pay via Visa" ><img src="images/visa.png" style="width:50px"></img></a>
+				<a href="" title="Pay via Master Card" ><img src="images/master.png" style="width:50px"></img></a>
+				<a href="" title="Pay via Discover" ><img src="images/discover.png" style="width:50px"></img></a>
+				<p style="font-size:12px;color:red;">Copyright (c) VIP Online Grocery Delivery System</p>
+			</nav>
+			
+			<article class="article2">
+				<h4>Also available in</h4>
+				<a href="https://play.google.com" title="Google Play" ><img src="images/google.png" style="width:80px"></img></a>
+				<a href="https://store.apple.com" title="App Store" ><img src="images/app.png" style="width:80px"></img></a>
+			
+			</article>
+			
+			<article class="article2">
+				<a href="termsConditions.html"><p>Terms and Conditions</p></a>
+				<a href="termsConditions.html"><p>Privacy Policy</p></a>
+				<a href="suggestions.html"><p>Feedback and Suggestions</p></a>
+			</article>
+			
+			<aside class="aside3">
+			<br><h4>Follow us on</h4>
+			<a href="https://www.facebook.com" title="Facebook" ><img src="images/fb.png" style="width:30px"></img></a>
+			<a href="https://www.intagram.com" title="Instagram" ><img src="images/insta.png" style="width:30px"></img></a>
+			<a href="https://www.twitter.com" title="Twitter" ><img src="images/twitter.png" style="width:30px"></img></a>
+			
+			</aside>
+		</section>
+			
+	
+	
+	</footer>
+		
+	
+</body>
+
+</html>

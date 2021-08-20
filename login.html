@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css"/>
+	<link rel="stylesheet" href="styles/layout.css"/>
+	<link rel="stylesheet" href="styles/formStyles.css"/>
+	<link rel="icon" href="ico.ico" type="image/x-icon">
+	<script type="text/javascript" src="js/home.js"></script>
+</head>
+
+<body>
+<!--Header Section-->
+	<header>
+	<!--navigation bar-->
+	<a href="#" title = "VIP Grocery Delivery System"><img src="images/logo.png" alt="VIP Grocery Delivery System"></img></a>
+	<img src="images/word.png" style="float:right;width:40%;margin-right:10px;margin-top:5px"></img>
+		<ul class="ul_menu">
+			<li class="li_menu"><a  class="A" href="home.html">Home</li></a>
+			<li class="li_menu"><a class="A" href="registration.html">Registration</li></a>
+			<li class="active"><a class="A" href="#">Login</li></a>
+			<li class="li_menu"><a class="A" href="contact.html">Contact Us</li></a>
+			<li class="li_menu"><a class="A" href="userAcc.html">User Accounts</li></a>
+			<a href="#" title ="search"><img src="images/search.png" style="float:right;width:40px"></img></a>
+			<input type="search" placeholder="Search" class="in"></input>
+		</ul>
+	</header>
+		<!--Main Content-->
+		<section>
+			<nav class="nav1">
+				<h4>Popular Orders</h4>
+
+				<ul class="ul_menu1">
+					<li><a class="active1" href="plates.html">Plate Sets</li></a><br>
+					<li><a class="active1" href="beverage.html">Beverages</li></a><br>
+					<li><a class="active1" href="laundry.html">Laundry Items</li></a><br>
+					<li><a class="active1" href="knife.html">Knife Sets</li></a><br>
+					<li><a class="active1" href="skin.html">Skin Care</li></a><br>
+					<h5>Pin It</h5>
+					<a href="https://www.pinterest.com" title = "pinterest" ><img src="images/pin.png" style ="width:50px"></img></a>
+					<h6>Online Shopping In Sri Lanka with Free Home Delivery</h6>
+					<p style="font-size:11px;color:blue">"What was the last time you had an exciting and rewarding online shopping experience? Can’t remember!"
+					</p>
+		
+				</ul><br/>
+			</nav>
+			<article class="article1">
+			<h1 style="text-align:center">-<u>Welcome to VIP! Please login</u>-</h1>
+				<p>New Member ? <a href="registration.html">Register</a> here.</p>
+				<form method="POST" target="_self" action="payment.html" onsubmit="">
+					<font color="green">Name</font><font color="red">*</font><br>
+					<input type="text" name="name" id="name" class="hi" placeholder="Enter your name" pattern="[a-zA-Z]{5,20}" required>
+					
+					<font color="green">Password</font><font color="red">*</font><br>
+					<input type="password" name="pwd" id="pwd" class="hi" placeholder="Enter your password" pattern="[a-zA-Z0-9]{5,10}" required><br>
+					<input type="submit" value="Login" id="submit" style="margin-left:auto;margin-right:auto;display:block">
+				
+				</form><br>
+				<a href="root/resetPassword.html" style="float:right">Reset Password<font color="red">?</font></a><br>
+				<h1 style="text-align:center;color:gray">Or</h1><br>
+				<a href="https://www.gmail.com" title="Sign in with Google"><img src="images/loginGoogle.jpg" style="margin-left:auto;margin-right:auto;display:block"></img></a>
+				<br>
+				<a href="https://www.facebook.com" title="Sign in with Facebook"><img src="images/loginFacebook.jpg" style="width:40%;margin-left:auto;margin-right:auto;display:block"></img></a>
+			</article>
+		
+			<aside class="aside1">
+				<a href="#" title ="Company Logo"><img src="images/cart.jpeg" style="width:100%;"></img></a><br><br><br>
+				<h4 style="color:gray;text-align:center">Scan Me</h4><br>
+				<a href="" title = "Scan Me" ><img src="images/qr.png" style ="width:100px;margin-left:50px"></img></a><br><br>
+				<input type="date" style =""></input><br>
+				<script>
+					var d = new Date();
+					var date = d.getDate();
+					var month=d.getMonth() + 1;
+					var year=d.getFullYear();
+					var str = month + " / " + date + " / " + year;
+		
+					document.write(str + "<br>" + "<br>");
+					
+					var sec = d.getSeconds();
+					var min = d.getMinutes();
+					var hr = d.getHours();
+					var time = hr + ":" + min + ":" + sec ;
+					document.write(time);
+				</script>
+			</aside>
+		
+		</section>
+	
+	<footer>
+	
+		<section>
+		
+			<nav class="nav2">
+				<h4>We are accepted</h4>
+				<a href="" title="Pay via Visa" ><img src="images/visa.png" style="width:50px"></img></a>
+				<a href="" title="Pay via Master Card" ><img src="images/master.png" style="width:50px"></img></a>
+				<a href="" title="Pay via Discover" ><img src="images/discover.png" style="width:50px"></img></a>
+				<p style="font-size:12px;color:red;">Copyright (c) VIP Online Grocery Delivery System</p>
+			</nav>
+			
+			<article class="article2">
+				<h4>Also available in</h4>
+				<a href="https://play.google.com" title="Google Play" ><img src="images/google.png" style="width:80px"></img></a>
+				<a href="https://store.apple.com" title="App Store" ><img src="images/app.png" style="width:80px"></img></a>
+			
+			</article>
+			
+			<article class="article2">
+				<a href="termsConditions.html"><p>Terms and Conditions</p></a>
+				<a href="termsConditions.html"><p>Privacy Policy</p></a>
+				<a href="suggestions.html"><p>Feedback and Suggestions</p></a>
+			</article>
+			
+			<aside class="aside3">
+			<br><h4>Follow us on</h4>
+			<a href="https://www.facebook.com" title="Facebook" ><img src="images/fb.png" style="width:30px"></img></a>
+			<a href="https://www.intagram.com" title="Instagram" ><img src="images/insta.png" style="width:30px"></img></a>
+			<a href="https://www.twitter.com" title="Twitter" ><img src="images/twitter.png" style="width:30px"></img></a>
+			
+			</aside>
+		</section>
+			
+	
+	
+	</footer>
+		
+	
+</body>
+
+</html>
